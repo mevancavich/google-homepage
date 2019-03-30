@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                text-align: center;
+            }
+
+           img {
+               margin-top: 150px;
+           }
+           
+           form {
+               height: 39px;
+               display: block;
+               margin-top: 0em;
+           }
+
+           #fkbx {
+               background-color: #F1F3F4;
+               border: none;
+               border-radius: 22px;
+               outline: none;
+               opacity: 1;
+               transition: opacity 200ms;
+               max-width: 560px;
+               height: 44px;
+               width: 620px;
+               cursor: text;
+               display: inline-block;
+               font: 18px arial,sans-serif;
+               line-height: 36px;
+               position: relative;
+           }
+
+           #fkbx-text {
+               color: rgb(128, 134, 139);
+               font-family: 'Roboto',arial,sans-serif;
+               font-size: 14px;
+               left: 0;
+               padding-left: 20px;
+               bottom: 4px;
+               right: 13px;
+               top: 4px;
+               margin-top: 1px;
+               overflow: hidden;
+               position: absolute;
+               text-align: initial;
+               text-overflow: ellipsis;
+               white-space: nowrap;
+           }
+
+           #fkbx>input {
+               background: transparent;
+               border: none;
+               bottom: 0;
+               box-sizing: border-box;
+               left: 0;
+               margin: 0;
+               outline: none;
+               padding: 0 8px;
+               position: absolute;
+               top: 2px;
+               width: 100%;
+           }
+
+           #fkbx-spch {
+               margin-right: 6px;
+               padding-right: 0;
+               width: 28px;
+               padding: 22px 12px 0;
+               cursor: pointer;
+               height: 21px;
+               background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAwCAYAAABXAvmHAAACTU1EQoEf6CFr1PJjeYQLPHF4xbpwDiLD8Q/QiD6CAEhIBAIfgIDXvSOOYNfugAAAABJRU5rkJggg==)no-repeat center;
+           }
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </center>
+        <form action="/search">
+            <div class id="fkbx" style="width: 674px;">
+                <div id="fkbx-text">Search Google or type a URL</div>
+                <input aria-hidden="true" autocomplete="off">
+                <div id="fkbx-spch" tabindex="0" aria-label="Search by voice" style="display: block";></div>
+            </div>
+        </form>
+    </body>
+</html>
