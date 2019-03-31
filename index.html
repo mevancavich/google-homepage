@@ -73,13 +73,42 @@
                height: 21px;
                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAwCAYAAABXAvmHAAACTU1EQoEf6CFr1PJjeYQLPHF4xbpwDiLD8Q/QiD6CAEhIBAIfgIDXvSOOYNfugAAAABJRU5rkJggg==)no-repeat center;
            }
+
+           #mngb {
+               position: absolute;
+               top: px;
+               -webkit-transition: opacity 130ms;
+               width: 100%;
+           }
+
+           ul {
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+           }
+
+           li {
+               display: inline;
+               float: right;
+           }
+
+           li a {
+               text-decoration: none;
+               color: black;
+               padding: 6px;
+           }
         </style>
     </head>
 
     <body>
-        <center>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        </center>
+              
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+        </ul>
+
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        
         <form action="/search">
             <div class id="fkbx" style="width: 674px;">
                 <div id="fkbx-text">Search Google or type a URL</div>
